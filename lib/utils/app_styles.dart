@@ -1,0 +1,32 @@
+import 'package:flutter/material.dart';
+
+import 'package:islami_app/utils/app_color.dart';
+
+class AppStyles {
+  static const TextStyle bold16White =TextStyle(
+    fontSize: 16,
+    fontWeight: FontWeight.bold,
+    color: AppColor.whiteColor
+  );
+  static const TextStyle bold24black =TextStyle(
+      fontSize: 24,
+      fontWeight: FontWeight.bold,
+      color: AppColor.blackColor
+  );
+  static const TextStyle bold14black =TextStyle(
+      fontSize: 14,
+      fontWeight: FontWeight.bold,
+      color: AppColor.blackColor
+  );
+  static const TextStyle bold20white=TextStyle(
+      fontSize: 20,
+      fontWeight: FontWeight.bold,
+      color: AppColor.whiteColor
+  );
+  static const TextStyle bold14white=TextStyle(
+      fontSize: 14,
+      fontWeight: FontWeight.bold,
+      color: AppColor.whiteColor
+  );
+
+}
