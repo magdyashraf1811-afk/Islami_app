@@ -28,5 +28,16 @@ class AppStyles {
       fontWeight: FontWeight.bold,
       color: AppColor.whiteColor
   );
+  static const TextStyle bold20primary=TextStyle(
+      fontSize: 20,
+      fontWeight: FontWeight.bold,
+      color: AppColor.primaryColor
+  );
+  static const TextStyle bold24primary=TextStyle(
+      fontSize: 24,
+      fontWeight: FontWeight.bold,
+      color: AppColor.primaryColor
+  );
+
 
 }
