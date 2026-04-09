@@ -18,8 +18,12 @@ class AppAssets {
   static const String searchIcon= 'assets/image/search_icon.png' ;
   static const String suraImage= 'assets/image/sura_image.png' ;
   static const String suraNum= 'assets/image/sura_num.png' ;
-  static const String leftCorner= 'assets/image/left_corner.png' ;
-  static const String rightCorner= 'assets/image/right_corner.png' ;
+  static const String leftCorner= 'assets/image/qarun_left_corner.png' ;
+  static const String rightCorner= 'assets/image/qarun_righr_corner.png' ;
   static const String bottomDecoration= 'assets/image/img_bottom_decoration.png' ;
+  static const String mosque= 'assets/image/Mosque-02 2.png' ;
+  static const String hadethRightCorner= 'assets/image/right_corner.png' ;
+  static const String hadethLeftCorner= 'assets/image/left_corner.png' ;
+  static const String hadethBackground= 'assets/image/HadithCardBackGround.png' ;
 
 }
