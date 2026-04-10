@@ -26,13 +26,3 @@ void saveLastSuraIndex (int newSuraIndex)async{
   await prefs.setStringList( SheredPrefUtils.mostRecentKey,mostRecentList );
 
 }
-//todo: get last sura index => read data
-Future<List<int>> getLastSuraIndex()async{
-  final SharedPreferences prefs = await SharedPreferences.getInstance();
-List<String> mostRecentlyListAsString =prefs.getStringList(SheredPrefUtils.mostRecentKey)??[];
-//todo: List<String> =>List<int> => map()
-List<int> mostRecentList=mostRecentlyListAsString.map((element)=>int.parse(element)).toList() ;
-return mostRecentList.reversed.toList() ;
-
-
-}

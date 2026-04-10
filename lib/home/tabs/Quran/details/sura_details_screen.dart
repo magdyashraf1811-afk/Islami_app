@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:islami_app/home/tabs/Quran/details/sura_content.dart';
 import 'package:islami_app/models/quran_resources.dart';
+import 'package:islami_app/provider/most_recent_provider.dart';
 import 'package:islami_app/utils/app_color.dart';
 import 'package:islami_app/utils/app_styles.dart';
 import 'package:islami_app/utils/images.dart';
+import 'package:provider/provider.dart';
 
 class SuraDetailsScreen extends StatefulWidget {
   const SuraDetailsScreen({super.key});
@@ -15,11 +17,20 @@ class SuraDetailsScreen extends StatefulWidget {
 
 class _SuraDetailsScreenState extends State<SuraDetailsScreen> {
   String suraContent = '';
+  late MostRecentProvider mostRecentProvider ;
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    super.dispose();
+    mostRecentProvider.getLastSuraIndex();
+
+  }
 
   @override
   Widget build(BuildContext context) {
     int index = ModalRoute.of(context)?.settings.arguments as int;
     var width = MediaQuery.of(context).size.width;
+    mostRecentProvider=Provider.of<MostRecentProvider>(context);
     if (suraContent.isEmpty) {
       loadSuraFile(index);
     }
@@ -63,7 +74,7 @@ class _SuraDetailsScreenState extends State<SuraDetailsScreen> {
     );
   }
 
-  void loadSuraFile(index) async {
+  void loadSuraFile(int index) async {
     String fileContent = await rootBundle.loadString(
       'assets/files/quran/${index + 1}.txt',
     );
