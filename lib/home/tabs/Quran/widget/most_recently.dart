@@ -67,7 +67,7 @@ class _MostRecentlyState extends State<MostRecently> {
                           children: [
 
                             Text( QuranResources.englishNames[mostRecentProvider.mostRecentList[index]], style: AppStyles.bold24black),
-                            Text(QuranResources.arabicNames[mostRecentProvider.mostRecentList[index]],style: AppStyles.bold24black)  ,
+                            Text(QuranResources.arabicName[mostRecentProvider.mostRecentList[index]],style: AppStyles.bold24black)  ,
                               Text('${QuranResources.versesCount[mostRecentProvider.mostRecentList[index]]}Verse',style: AppStyles.bold24black)
                              ],
                         ),

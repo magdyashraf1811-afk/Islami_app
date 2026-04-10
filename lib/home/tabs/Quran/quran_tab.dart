@@ -101,8 +101,8 @@ class _QuranTabState extends State<QuranTab> {
         filterSearchList.add(i);
       }
     }
-    for (int i = 0; i < QuranResources.arabicNames.length; i++) {
-      if (QuranResources.arabicNames[i].contains(newText)) {
+    for (int i = 0; i < QuranResources.arabicName.length; i++) {
+      if (QuranResources.arabicName[i].contains(newText)) {
         filterSearchList.add(i);
       }
     }

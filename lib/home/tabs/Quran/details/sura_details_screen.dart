@@ -54,7 +54,7 @@ class _SuraDetailsScreenState extends State<SuraDetailsScreen> {
                   children: [
                     Image.asset(AppAssets.leftCorner),
                     Text(
-                      QuranResources.arabicNames[index],
+                      QuranResources.arabicName[index],
                       style: AppStyles.bold24primary,
                     ),
                     Image.asset(AppAssets.rightCorner),

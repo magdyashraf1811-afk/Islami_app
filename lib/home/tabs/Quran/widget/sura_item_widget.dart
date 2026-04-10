@@ -29,7 +29,7 @@ class SuraItemWidget extends StatelessWidget {
           ],
         ),
         Spacer(),
-        Text(QuranResources.arabicNames[index],style: AppStyles.bold20white,)
+        Text(QuranResources.arabicName[index],style: AppStyles.bold20white,)
       ],
     );
   }
