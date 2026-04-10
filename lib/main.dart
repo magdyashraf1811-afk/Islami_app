@@ -3,11 +3,14 @@ import 'package:islami_app/home/home_screen.dart';
 import 'package:islami_app/home/tabs/Quran/details/sura_details_screen.dart';
 import 'package:islami_app/home/tabs/hadeth_tab/details/hadeth_details_screen.dart';
 import 'package:islami_app/onboarding/onboarding_screen.dart';
+import 'package:islami_app/provider/most_recent_provider.dart';
 import 'package:islami_app/utils/app_routes.dart';
 import 'package:islami_app/utils/app_theme.dart';
+import 'package:provider/provider.dart';
 
 void main() {
-  runApp(Myapp());
+  runApp(ChangeNotifierProvider(create: (context)=>MostRecentProvider(),
+  child: Myapp()));
 }
 
 class Myapp extends StatelessWidget {
