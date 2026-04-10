@@ -25,5 +25,7 @@ class AppAssets {
   static const String hadethRightCorner= 'assets/image/right_corner.png' ;
   static const String hadethLeftCorner= 'assets/image/left_corner.png' ;
   static const String hadethBackground= 'assets/image/HadithCardBackGround.png' ;
+  static const String sebhaBody= 'assets/image/Sebha_Body.png' ;
+  static const String sebha= 'assets/image/Sebha.png' ;
 
 }
